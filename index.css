@@ -13,12 +13,18 @@ body{
     margin: auto;
     text-align: center;
     padding: 20px;
-    background-color:yellow;
+    background-color:#ffe01b;
     position: sticky;
     top: 0%;
 }
 #navbar:hover{
     background-color: white;
+
+}
+#log{
+    background-color: #FFFFFF00;
+    border: 1px solid black;
+    
 }
 #lgo{
     height: 40px;
@@ -35,9 +41,10 @@ h3+div{
 #navbar>button{
     padding: 10px 25px;
 }
+
 #hdr{
     height: 450px;
-    background-color: yellow;
+    background-color: #ffe01b;
     display: flex;
 }
 #hdr img{
@@ -72,12 +79,10 @@ h2{
     height: 50%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    border: 1px solid red;
     
     justify-content: none;
 }
 #bdy>div{
-    border: 1px solid red;
     margin-top: 40px;
 
 }
@@ -124,4 +129,240 @@ h2{
 }
 #prom p{
     font-size: 20px;
+}
+#rating{
+    background-color: #fbeeca;
+    height: 700px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+#rating>h1:nth-child(1){
+    padding-top: 40px;
+}
+
+#rating>div{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    margin-top: 90px;
+    display: flex;
+}
+#rating>div>div{
+    height: 100%;
+    width: 100%;
+}
+#rating>div>div h4{
+    margin: 20px 0px;
+    font-size: 24px;
+}
+#rating>div>div p{
+    font-size: 18px;
+    width: 230px;
+    text-align: center;
+    margin: auto;
+}
+#rating>div>div:nth-child(2)>p+p{
+    margin-top: 90px;
+}
+#rating>div>div>.btnp{
+    margin-top: 70px;
+}
+#rating>div>div>.btnp:hover,#rating>div>div h4:hover,#rating>div>div img:hover{
+    cursor: pointer;
+    
+}
+#rating>div>div>.btnp:hover{
+    text-decoration: underline;
+}
+#rating>h1,#rating>div>div h4{
+    font-family: Means Web,Georgia,Times,Times New Roman,serif;
+    font-weight: 300;
+}
+#promo1{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+#promo1 h1{
+    margin-top: 60px;
+}
+#promo1>p{
+    width: 40%;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+#promo1>div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    gap: 80px 0px;
+    height: auto;
+}
+
+#promo1>div>div>img{
+    width: 70%;
+    margin-right: 80px;
+}
+#promo1>div>div:nth-child(1),#promo1>div>div:nth-child(3){
+    text-align: left;
+}
+#promo1>div>div:nth-child(2),#promo1>div>div:nth-child(4){
+    text-align: right;
+}
+#promo1>div>div>h1{
+    margin: 20px 0px;
+
+}
+#promo1>div>div>p{
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-right: 100px;
+}
+#promo1>div>div>div{
+    border: 1.5px solid aqua;
+    width: fit-content;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+#promo1>div>div>div:hover{
+    border: 1.5px solid black;
+}
+#jk{
+    margin: 60px 120px;
+}
+#ft1{
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+
+#ft1 img{
+    width: 80%;
+    
+}
+#ft1>div:nth-child(1){
+    width: 70%;
+}
+#ft1>div:nth-child(2){
+    text-align: right;
+}
+#ft1 h1{
+    font-size: 40px;
+    font-weight: lighter;
+    line-height: 50px;
+    color: #403b3b;
+    margin-bottom: 70px;
+}
+#ft1 h1::after{
+    content: "\201D";
+    
+}
+#ft1 h1::before{
+    content: "\201C";
+}
+#ft1+div{
+    width: 100%;
+    height: 200px;
+    background-color:#ffe01b;
+    margin-top: 70px;
+    text-align: center;
+    margin: auto;
+}
+#ft1+div>h1,#ft1+div>p{
+    margin: 20px;
+}
+#ft1+div>h1{
+    padding-top: 30px;
+}
+#ft1+div>div{
+    background-color: teal;
+    border: none;
+    width: fit-content;
+    padding: 20px 30px;
+    color: white;
+    margin-left: 600px;
+    cursor: pointer;
+}
+#ft1+div>div:hover{
+    background-color: rgb(0, 107, 107);
+}
+#ft1+div+div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid black;
+    background-color: rgb(236, 236, 236);
+}
+#foot1{
+    width: 100%;
+    border-bottom: 1px solid black;
+    height: auto;
+    background-color: rgb(236, 236, 236);
+}
+#foot1>div{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    display: flex;
+    padding-top: 70px;
+    justify-content: space-between;
+    
+}
+#foot1>div>div>h4{
+    margin-bottom: 20px;
+}
+#foot1 p{
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+#foot1 img{
+    width: 50%;
+    margin-left: -60px;
+}
+.sm{
+    width: 200px;
+    font-size: 15px;
+}
+#foot1>div>div:nth-child(6)>p+p{
+    margin-bottom: 90px;
+}
+#foot2{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(236, 236, 236);
+}
+select{
+    padding: 10px;
+}
+#foot2>div{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    padding-top: 80px;
+}
+#foot2>div>div:nth-child(1){
+    padding: 20px;
+}
+#foot2>div>div:nth-child(2){
+    width: 30%;
+}
+#foot2>div>div>img:nth-child(1),#foot2>div>div>img:nth-child(2){
+    width: 20%;
+}
+#foot2>div>div>img{
+    margin-right: 20px;
+}
+#foot2>div>div>p{
+    width: 220px;
+    font-size: 13px;
 }
