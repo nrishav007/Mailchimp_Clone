@@ -213,13 +213,27 @@
 </body>
 </html>
 <script>
+    document.getElementById("sign").addEventListener("click",function(){
+        window.location.href="signup.html";
+    })
     window.onscroll=function(){
-        if(document.documentElement.scrollTop===0){
+        if(document.documentElement.scrollTop<=0){
             document.getElementById("navbar").style.backgroundColor="#ffe01b"
-
+            document.getElementById("navbar").onmouseover=function(){
+                document.getElementById("navbar").style.backgroundColor="white";
+            }
+            document.getElementById("navbar").onmouseleave=function(){
+                document.getElementById("navbar").style.backgroundColor="#ffe01b";
+            }
         }
         else{
             document.getElementById("navbar").style.backgroundColor="white"
+            document.getElementById("navbar").onmouseover=function(){
+                document.getElementById("navbar").style.backgroundColor="white";
+            }
+            document.getElementById("navbar").onmouseleave=function(){
+                document.getElementById("navbar").style.backgroundColor="white";
+            }
         }
     }
 </script>

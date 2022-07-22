@@ -40,6 +40,7 @@ h3+div{
 }
 #navbar>button{
     padding: 10px 25px;
+    cursor: pointer;
 }
 
 #hdr{
