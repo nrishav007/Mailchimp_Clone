@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Mailchimp</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div>
+        <div id="logn">
+            <img id="logo" src="download.png" alt="logo">
+            <h1>Log In</h1>
+            <p>Need a Mailchimp account? <a href="signup.html">Create an account</a></p>
+            <p class="tg">Username</p>
+            <input type="text" id="uname">
+            <p class="tg">Password</p>
+            <input type="password" id="pasw">
+            <button id="log">Login</button>
+            <div>
+                <input type="checkbox" id="agreee" required="true">
+                <label for="agreee" id="checki">Keep me logged in </label>
+            </div>
+            <p><a href="">Forgot username?</a>· <a href="">Forgot password?</a> </p>
+            <p>©2001–2022 All Rights Reserved. Mailchimp® is a registered trademark of The Rocket Science Group, LLC. <a class="lbl" href=""> Cookie Preferences</a>, <a class="lbl" href=""> Privacy</a>, and <a class="lbl" href=""> Terms</a>.</p>
+        </div>
+        <div id="ava">
+            <img src="https://cdn-images.mailchimp.com/billboards/phpza0iJx.jpeg" alt="logo">
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("logo").addEventListener("click",function(){
+        window.location.href="index.html"
+    })
+    let dta=JSON.parse(localStorage.getItem("mchimp")) || [];
+    document.getElementById("log").addEventListener("click",function(){
+        let name=document.getElementById("uname").value;
+        let pas=document.getElementById("pasw").value;
+        let c=0;
+        dta.forEach(function(ele) {
+            if(ele.name==name && ele.pass==pas){
+                c++;
+            }
+        });
+        if(c==1){
+            alert("Data found in server");
+                window.location.href="index.html";
+        }
+        else{
+            alert("Invalid Data");
+                window.location.href="login.html";
+        }
+    })
+</script>
